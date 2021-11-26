@@ -1,0 +1,637 @@
+/* Google Font   CDN link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+* {
+    background-size: center;
+    background-position: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 12px;
+    background: #4070F4;
+}
+
+/* Navigation Menu CSS */
+nav {
+    position: fixed;
+    text-decoration: none;
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.4s ease;
+    z-index: 998;
+}
+
+nav.sticky {
+    padding: 13px 0;
+    background: #4070F4;
+}
+
+nav .navbar {
+    width: 90%;
+    /* background: red; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .navbar .logo a {
+    font-size: 40px;
+    font-weight: 500;
+    color: #4070F4;
+}
+
+nav.sticky .navbar .logo a {
+    color: #FFF;
+}
+
+nav .navbar .menu {
+    display: flex;
+}
+
+nav .navbar .menu li {
+    margin: 0 8px;
+    list-style: none;
+}
+
+.navbar .menu li a {
+    font-size: 18px;
+    font-size: 500;
+    color: #0E2431;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: #4070F4;
+}
+
+nav.sticky .navbar .menu li a {
+    color: #FFF;
+}
+
+nav.sticky .navbar .menu li a:hover {
+    color: #4070F4;
+}
+
+.navbar .media-icons a {
+    font-size: 18px;
+    margin: 0 6px;
+    color: #4070F4;
+}
+
+nav.sticky .navbar .media-icons a {
+    color: #FFF;
+}
+
+
+/* Side Navigation Menu button CSS  */
+nav .menu-btn,
+.navbar .cancel-btn {
+    position: absolute;
+    color: #FFF;
+    font-size: 20px;
+    right: 30px;
+    top: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .menu-btn {
+    color: #4070F4;
+}
+
+nav.sticky .menu-btn {
+    color: #FFF;
+}
+
+/* Home Section CSS */
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url(img/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.home .home-content {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .text .text-one {
+    font-size: 25px;
+    color: #0E2431;
+}
+
+.home .text .text-two {
+    font-size: 75px;
+    font-weight: 600;
+    color: #0E2431;
+}
+
+.home .text .text-three {
+    font-size: 40px;
+    color: #0E2431;
+}
+
+.home .text .text-four {
+    font-size: 23px;
+    margin: 5px 0;
+    color: #0E2431;
+}
+
+.home .button {
+    margin: 14px 0;
+}
+
+.home .button button {
+    outline: none;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 8px 16p;
+    background: #4070F4;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4 ease-out;
+}
+
+.home .button button:hover {
+    color: #4070F4;
+    background-color: #FFF;
+    border-color: #4070F4;
+}
+
+/* About me Section CSS */
+/* Those element where we need to apply same css their i will select "Section tag"
+and "Class" Disection */
+section {
+    padding-top: 40px;
+}
+
+.about .content {
+    width: 80%;
+    margin: 40px auto;
+    font-family: "Poppins", sans-serif;
+}
+
+section .title {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+section .title span {
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+section .title span::before section .title span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #4070F4;
+}
+
+section .title span::after {
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7px;
+}
+
+.about .about-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-details .right {
+    width: 45%;
+}
+
+.about .about-details .right img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about .about-details .left {
+    width: 55%;
+}
+
+section .left .topic {
+    font-size: 25px;
+    font-weight: 500;
+    color: #0E2431;
+    margin-bottom: 10px;
+}
+
+.about-details .left p {
+    color: #0E2431;
+    text-align: justify;
+}
+
+section .button {
+    margin: 14px 0;
+}
+
+section .button button {
+    outline: none;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 8px 16p;
+    background: #4070F4;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4 ease-out;
+}
+
+.about .button button:hover {
+    color: #4070F4;
+    background-color: #FFF;
+    border-color: #4070F4;
+}
+
+.services .boxes .box:hover .icon {
+    background: #FFF;
+    color: #4070F4;
+}
+
+.services .boxes .box:hover .topic {
+    color: #FFF;
+}
+
+/* Contact me CSS*/
+.contact .text {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.contact .button {
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+/* Footer CSS */
+footer {
+    background: #4070F4;
+    text-align: center;
+}
+
+
+/* Responsive Media Query CSS. */
+@media (max-width: 1190px) {
+    .about .content {
+        width: 85%;
+    }
+
+    .skills .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1090px) {
+    .about .about-details {
+        flex-direction: column;
+    }
+
+    .about .about-details .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .about-details .left {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .services .boxes .box {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .contact .text {
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 971px) {
+    .about .about-details .right img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 750px) {
+    nav .navbar .menu {
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: #0E2431;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transition: all 0.5s ease;
+    }
+
+    nav .navbar.active .menu {
+        left: 0;
+    }
+
+    .navbar .menu li a {
+        display: block;
+        margin: 10px 0;
+        font-size: 23px;
+        color: #FFF;
+    }
+
+    .navbar .media-icons a {
+        display: none;
+    }
+
+    nav .menu-btn,
+    .navbar .cancel-btn {
+        display: block;
+    }
+
+    .home .text .text-two {
+        font-size: 65px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+
+    .home .text .text-three {
+        font-size: 35px;
+    }
+
+    .skills .skill-details {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .skills .skill-details .left {
+        width: 90%;
+    }
+
+    .skills .skill-details .boxes {
+        width: 90%;
+        margin: 40px 0;
+    }
+
+    .services .boxes .box {
+        width: 100%;
+    }
+
+    .contact .text {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .home .text .text-two {
+        font-size: 55px;
+    }
+
+    .home .text .text-three {
+        font-size: 33px;
+    }
+}
+
+/* My Skills CSS */
+.skills {
+    background: #F0F8FF;
+}
+
+.skills .content {
+    padding: 40px 0;
+}
+
+.skills .skill-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skill-details .left {
+    width: 50%;
+}
+
+.skill-details .left p {
+    color: #0E2431;
+    text-align: justify;
+}
+
+.skill-details .left .experience {
+    display: flex;
+    align-items: center;
+}
+
+.skill-details .left .experience .num {
+    font-size: 80px;
+    color: #0E2431;
+    font-weight: 500;
+}
+
+.skill-details .left .experience .exp {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .skill-details .boxes {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills .skill-details .boxes .box {
+    width: calc(100% / 2 - 20px);
+}
+
+.skill-details .boxes .box .topic {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4070F4;
+}
+
+.skill-details .boxes .box .num {
+    font-size: 60px;
+    font-weight: 600;
+    color: #4070F4;
+}
+
+/* My services Section CSS*/
+.content {
+    align-items: center;
+    text-align: center;
+}
+
+.services .title span {
+    padding-top: 50px;
+}
+
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .boxes .box {
+    width: calc(100% / 3 - 20px);
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover {
+    background: #4070F4;
+    color: #fff;
+}
+
+.services .boxes .box .icon {
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: #4070F4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 10px auto;
+    transition: all 0.5s ease;
+}
+
+.left .topic {
+    margin-right: 370px;
+}
+
+.services .boxes .box:hover .icon {
+    color: #4070F4;
+    background: #FFF;
+}
+
+.boxes .topic {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+.boxes p {
+    margin: 20px 20px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Contact Me CSS */
+.contact {
+    background: #F0F8FF;
+    padding: 20px 0;
+}
+
+.content p {
+    margin: 20px 20px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.content .topic {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+section .button button {
+    outline: none;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 8px 16p;
+    background: #4070F4;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4 ease-out;
+    margin-bottom: 50px;
+}
+
+.content .button button:hover {
+    color: #4070F4;
+    background-color: #FFF;
+    border-color: #4070F4;
+}
+
+/* Footer CSS */
+footer {
+    background: #4070F4;
+    text-align: center;
+    padding-left: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins"sans-serif;
+    color: #FFF;
+}
+
+.footer .text span {
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer .text span a {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer .text span a:hover {
+    text-decoration: underline;
+}
+
+/* Scroll to top CSS */
+.scroll-btn i {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 12px;
+    background: #4070F4;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
